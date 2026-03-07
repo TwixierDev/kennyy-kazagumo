@@ -1,0 +1,428 @@
+{
+  "common": {
+    "voice_required": "最初にボイスチャンネルに参加する必要があります。",
+    "not_same_channel": "これを使用するには、ボットと同じボイスチャンネルにいる必要があります。",
+    "no_player": "このサーバーでは現在何も再生されていません。",
+    "no_track": "現在再生中のトラックがありません。",
+    "generic_error": "問題が発生しました。もう一度お試しください。",
+    "queue_empty": "キューに追加の曲はありません。",
+    "buttons_help": "下のボタンを使用して再生を制御します",
+    "now_playing": "再生中",
+    "artist": "アーティスト",
+    "duration": "長さ",
+    "volume": "音量",
+    "queue_label": "キュー",
+    "status": "ステータス",
+    "requested_by": "リクエスト",
+    "progress": "進行状況",
+    "queue_size": "キューの長さ",
+    "unknown": "不明",
+    "no_voice_permissions_title": "権限がありません",
+    "no_voice_permissions": "そのボイスチャンネルに参加または発言する権限がありません。",
+    "no_text_permissions_title": "権限がありません",
+    "no_text_permissions": "このチャンネルでメッセージや埋め込みを送信する権限がありません。"
+  },
+  "errors": {
+    "unknown_command": "不明なコマンドです。",
+    "command_failed": "コマンドの実行中に問題が発生しました。",
+    "button_failed": "このアクションを実行できませんでした。",
+    "button_unknown": "このボタンは設定されていません。",
+    "lavalink_error_title": "あれ、内部接続に小さな問題がありました。",
+    "lavalink_error_description": "現在、サーバーが不安定です！ボットをサーバーから削除しないでください。一時的なもので、すぐに修正されます！",
+    "node_down_title": "接続が切断されました",
+    "node_down_description": "再生していたサーバーがオフラインになりました。コストを抑えてボットを維持するためにサードパーティのサーバーを使っており、一時的に不安定になることがあります（残念ながらこちらでは制御できません）。\n\nでも優しいボットだから、キューを保存しておいたよ :3",
+    "node_down_recover_button": "キューを復元"
+  },
+  "queue": {
+    "title": "現在のキュー",
+    "empty": "キューに追加の曲はありません。",
+    "field_first_track": "最初のトラック",
+    "field_next": "次",
+    "total": "合計トラック数",
+    "page": "ページ"
+  },
+  "now_playing": {
+    "no_track": "利用可能なトラックがありません。",
+    "queue_value": "{count}曲",
+    "footer_hint": "下のボタンを使用して再生を制御します"
+  },
+  "status": {
+    "playing": "🔄 再生中",
+    "paused": "⏸️ 一時停止"
+  },
+  "player": {
+    "lonely": {
+      "pause_title": "え！一人にされちゃった :(",
+      "pause": "誰かが戻るまで2分間キューを一時停止します。そうでなければ、切断します！",
+      "resume_title": "やった！もう一人じゃない :D",
+      "resume": "誰かが{call}に参加しました！キューを再開します。",
+      "disconnect_title": "まあ、帰るね、誰も戻ってこなかったし...",
+      "disconnect": "誰も{call}に戻ってきませんでした。今すぐ切断します。"
+    }
+  },
+  "loop": {
+    "off": "ループ: オフ",
+    "track": "ループ: トラック",
+    "queue": "ループ: キュー"
+  },
+  "commands": {
+    "play": {
+      "description": "Kazagumoを使用して曲またはプレイリストを再生します",
+      "option_query": "リンクまたは検索用語",
+      "already_other_channel": "既に別のボイスチャンネルで再生中です。",
+      "searching": "検索中...",
+      "no_results": "その検索の結果が見つかりませんでした。",
+      "no_results_title": "何も見つかりません",
+      "no_results_description": "検索の結果が見つかりませんでした。\n\n別のキーワードで再度試すか、リンクが正しいか確認してください。",
+      "load_failed": "そのトラックを読み込めませんでした。",
+      "load_failed_title": "読み込み失敗",
+      "load_failed_description": "このトラックを読み込めませんでした。\n\nリンクが無効か、コンテンツが利用できません。",
+      "playlist_title": "プレイリストがキューに追加されました",
+      "playlist_description": "**{name}**\n{count}曲追加されました。",
+      "track_title": "トラックがキューに追加されました",
+      "track_description": "{title}",
+      "artist": "アーティスト",
+      "duration": "長さ",
+      "requested_by": "リクエスト",
+      "footer": "現在のキュー: {count}曲",
+      "playback_start": "**{label}**を再生中...",
+      "search_error": "このトラックの検索中に問題が発生しました。"
+    },
+    "resumequeue": {
+      "description": "切断後に最後に保存されたキューを再開します",
+      "no_cache_title": "保存されたキューがありません",
+      "no_cache_description": "再開するキューがありません。\n\nキューのキャッシュは1時間後、またはキューが自然に終了すると期限切れになります。",
+      "failed_title": "再開に失敗しました",
+      "failed_description": "保存されたキューからトラックを読み込めませんでした。",
+      "success_title": "キューが復元されました！",
+      "success_description": "**{count}**曲がキューに追加されました。",
+      "first_track": "最初のトラック",
+      "queue_size": "キューサイズ",
+      "loading": "キューを復元中..."
+    },
+    "pause": {
+      "description": "現在の曲を一時停止します",
+      "already_paused": "音楽は既に一時停止されています。",
+      "success": "⏸️ トラックを一時停止しました。"
+    },
+    "resume": {
+      "description": "音楽を再開します",
+      "already_playing": "音楽は既に再生中です。",
+      "success": "▶️ トラックを再開しました。"
+    },
+    "filter": {
+      "description": "オーディオフィルターコントロールパネルを開きます",
+      "no_track": "現在再生中のトラックがありません。",
+      "filters": {
+        "embed": {
+          "title": "🎛️ オーディオフィルターパネル",
+          "description": "音楽に適用するフィルターを選択してください:",
+          "now_playing_label": "🎵 再生中",
+          "now_playing_value": "**{title}**\nアーティスト: {author}",
+          "available_label": "🎛️ 利用可能なフィルター",
+          "available_value": "🎵 **バスブースト** - 低周波数を増幅\n⚡ **ナイトコア** - 速度とピッチを上げる\n🎤 **カラオケ** - ボーカル削減\n🌀 **8Dオーディオ** - 回転効果\n🔄 **リセット** - すべてのフィルターを削除",
+          "howto_label": "💡 使い方",
+          "howto_value": "ボタンをクリックしてフィルターを切り替えます。アクティブなフィルターは青色になります。",
+          "footer": "⚠️ フィルターの適用には時間がかかる場合があります"
+        }
+      },
+      "buttons": {
+        "bass_boost": {
+          "label": "バスブースト",
+          "select_level": "🎵 バスブーストのレベルを選択:",
+          "activated_low": "🔉 バスブーストが有効になりました（低）。",
+          "activated_medium": "🔊 バスブーストが有効になりました（中）。",
+          "activated_high": "📢 バスブーストが有効になりました（高）。",
+          "deactivated": "🎵 バスブーストが無効になりました。",
+          "error": "❌ バスブーストの適用中にエラーが発生しました。",
+          "level_low": "低",
+          "level_medium": "中",
+          "level_high": "高"
+        },
+        "nightcore": {
+          "label": "ナイトコア",
+          "activated": "⚡ ナイトコアが有効になりました！",
+          "deactivated": "⚡ ナイトコアが無効になりました。",
+          "error": "❌ ナイトコアの適用中にエラーが発生しました。"
+        },
+        "karaoke": {
+          "label": "カラオケ",
+          "activated": "🎤 カラオケが有効になりました！",
+          "deactivated": "🎤 カラオケが無効になりました。",
+          "error": "❌ カラオケの適用中にエラーが発生しました。"
+        },
+        "rotation": {
+          "label": "8Dオーディオ",
+          "activated": "🌀 8Dオーディオが有効になりました！",
+          "deactivated": "🌀 8Dオーディオが無効になりました。",
+          "error": "❌ 8Dオーディオの適用中にエラーが発生しました。"
+        },
+        "reset": {
+          "label": "リセット",
+          "success": "🔄 すべてのフィルターが削除されました！",
+          "error": "❌ フィルターのリセット中にエラーが発生しました。"
+        }
+      }
+    },
+    "ping": {
+      "description": "Discord、Lavalink、Cloudflareのレイテンシを測定します",
+      "embed": {
+        "title": "🏓 Ping",
+        "footer": "測定は今行われました"
+      },
+      "fields": {
+        "discord": {
+          "name": "Discord (Gateway)",
+          "value": "{emoji} `{latency} ms`"
+        },
+        "lavalink": {
+          "display_name": "Lavalinkノード: {name}",
+          "value": "{emoji} `{latency} ms` • エンドポイント: `{endpoint}`"
+        },
+        "lavalink_empty": {
+          "name": "Lavalink",
+          "value": "{emoji} 設定が見つかりません"
+        },
+        "cloudflare": {
+          "name": "1.1.1.1",
+          "value": "{emoji} `{latency} ms` • TCP 443"
+        }
+      }
+    },
+    "skip": {
+      "description": "キュー内の次のトラックにスキップします",
+      "no_track": "スキップする現在のトラックがありません。",
+      "success": "⏭️ トラックをスキップしました。"
+    },
+    "skipto": {
+      "description": "キュー内の指定位置へ移動",
+      "option_position": "キューの位置 (1 = 次の曲)",
+      "invalid_position": "1以上の位置を指定してください。",
+      "too_short": "キューにそれだけの曲がありません。",
+      "success": "⏭️ {position} 曲目にスキップしました。"
+    },
+    "stop": {
+      "description": "再生を停止してキューをクリアします",
+      "success": "⏹️ プレーヤーが停止し、キューがクリアされました。"
+    },
+    "shuffle": {
+      "description": "現在のキューをシャッフル",
+      "empty": "キューが空か、1曲しかありません。",
+      "success": "キューをシャッフルしました！"
+    },
+    "seek": {
+      "description": "現在のトラックの特定の位置にジャンプします",
+      "option_label": "例: 90s, 1m20s, 01:20, 2h5m",
+      "invalid": "無効な時間です。`90s`、`1m20s`、または`01:30`のようなものを試してください。",
+      "success": "⏩ **{time}**に移動しました。",
+      "error": "このトラックの位置を変更できませんでした。"
+    },
+    "language": {
+      "description": "このサーバーのボット言語を選択します",
+      "option_label": "言語",
+      "success": "言語が**{language}**に更新されました。",
+      "current": "現在の言語は**{language}**です。",
+      "not_available": "言語設定は現在利用できません。"
+    },
+    "admin": {
+      "errors": {
+        "not_owner": "このコマンドはボットのオーナーのみが使用できます。",
+        "storage_unavailable": "プレゼンスストレージは現在利用できません。",
+        "unexpected": "ステータスの更新中に問題が発生しました。"
+      },
+      "status": {
+        "labels": {
+          "online": "オンライン",
+          "idle": "退席中",
+          "dnd": "取り込み中",
+          "invisible": "オフライン表示"
+        }
+      },
+      "setstatus": {
+        "description": "ボットのステータスを変更します（オンライン、取り込み中、退席中、オフライン表示）",
+        "option_state": "新しいステータスを選択",
+        "success_title": "✅ ステータスが更新されました",
+        "success_description": "新しいステータス: **{status}**。"
+      },
+      "activity_types": {
+        "playing": "プレイ中",
+        "listening": "聴いています",
+        "watching": "視聴中",
+        "competing": "競争中",
+        "streaming": "配信中"
+      },
+      "setpresence": {
+        "errors": {
+          "message_required": "❌ アクティビティのメッセージを入力してください。",
+          "streaming_message_required": "❌ 配信のメッセージを入力してください。",
+          "streaming_url": "❌ 配信には有効なURL（Twitch/YouTube）を入力してください。"
+        },
+        "success": {
+          "title": "✅ プレゼンスが更新されました",
+          "cleared": "アクティビティがクリアされました。",
+          "updated": "アクティビティ設定: **{activity_label}** — {message}",
+          "url_label": "URL"
+        }
+      },
+      "logs": {
+        "errors": {
+          "storage_unavailable": "ログ設定は現在利用できません。",
+          "status_failed": "ログ設定を読み取れませんでした。後でもう一度お試しください。",
+          "toggle_failed": "ログ設定を更新できませんでした。"
+        },
+        "status_title": "📊 音楽ログステータス",
+        "status_description": "音楽開始ログは現在**{status}**です。",
+        "status_enabled": "有効",
+        "status_disabled": "無効",
+        "status_channel_label": "ログチャンネル",
+        "status_channel_unset": "未設定（LOG_CHANNEL_IDを設定してください）。",
+        "enable_title": "✅ 音楽ログが有効になりました",
+        "enable_description": "ユーザーが新しいトラックを開始するたびにログを送信します。",
+        "disable_title": "🔕 音楽ログが無効になりました",
+        "disable_description": "音楽開始ログを送信しなくなります。"
+      },
+      "restart": {
+        "status": {
+          "title": "ℹ️ 再起動ステータス",
+          "description": "再起動は現在**{status}**です。",
+          "scheduled": "予定されています",
+          "not_scheduled": "予定されていません",
+          "active_connections_label": "アクティブな音声接続"
+        },
+        "schedule": {
+          "success_title": "✅ 再起動が予定されました",
+          "success_description": "どの音声チャンネルにも接続されていない状態になり次第、自動的に再起動します。",
+          "already_title": "⚠️ 再起動は既に予定されています",
+          "already_description": "アクティブな音声接続がなくなったら再起動するのを既に待機しています。"
+        },
+        "cancel": {
+          "none_title": "ℹ️ 予定された再起動はありません",
+          "none_description": "キャンセルする予定された再起動はありません。",
+          "success_title": "🚫 再起動がキャンセルされました",
+          "success_description": "予定されていた再起動が正常にキャンセルされました。"
+        }
+      }
+    },
+    "help": {
+      "main": {
+        "title": "📚 コマンドセンター",
+        "description": "ヘルプメニューへようこそ！下のカテゴリーを選択して、利用可能なすべてのコマンドを探してください。\n\n**クイック情報：**\n🎵 YouTube、Spotify、Deezerなどから音楽再生\n⚙️ 設定で体験をカスタマイズ\n🛠️ サーバー管理のためのユーティリティ",
+        "footer": "❤️で作成 | カテゴリーを選択して開始"
+      },
+      "categories": {
+        "music": "音楽コマンド",
+        "music_description": "音楽の再生、コントロール、管理",
+        "music_short": "{count}個のコマンド利用可能",
+        "config": "設定",
+        "config_description": "ボットの設定をカスタマイズ",
+        "config_short": "言語と環境設定",
+        "utilities": "ユーティリティ",
+        "utilities_description": "便利なツールと情報",
+        "utilities_short": "Pingと診断",
+        "admin": "管理者コマンド",
+        "admin_description": "ボット管理（所有者のみ）",
+        "admin_short": "高度なコントロール",
+        "home": "ホーム",
+        "home_short": "メインメニューに戻る"
+      },
+      "dropdown": {
+        "placeholder": "📂 カテゴリーを選択..."
+      },
+      "music": {
+        "description": "{count}個のコマンドで音楽再生を完全にコントロール。YouTube、Spotify、Deezer、Apple Music、SoundCloudなどに対応！",
+        "play": "曲を再生またはキューに追加（URLまたは検索）",
+        "pause": "現在のトラックを一時停止",
+        "resume": "再生を再開",
+        "skip": "次の曲にスキップ",
+        "stop": "再生を停止してキューをクリア",
+        "queue": "現在のキューを表示",
+        "shuffle": "キューをシャッフル",
+        "skipto": "キュー内の特定位置にスキップ",
+        "seek": "トラック内の特定時間にジャンプ",
+        "lyrics": "現在の曲の歌詞を同期表示",
+        "filters": "オーディオフィルターを適用（ベースブースト、ナイトコア、カラオケ、ローテーション）"
+      },
+      "config": {
+        "description": "設定を通じてボット体験をカスタマイズ。",
+        "language": "ボットの言語を変更（{count}言語対応）"
+      },
+      "utilities": {
+        "description": "ボットのパフォーマンスと接続性を監視するための便利なツール。",
+        "ping": "Discord、Lavalink、Cloudflareのレイテンシーを確認"
+      },
+      "admin": {
+        "description": "⚠️ **ボット所有者のみ** - 管理用の高度なコマンド。",
+        "admin": "管理パネルにアクセス（プレゼンス、ログ、再起動）"
+      },
+      "footer": "ドロップダウンメニューでカテゴリーを切り替え"
+    }
+  },
+  "seek": {
+    "no_track": "現在再生中のトラックがありません。"
+  },
+  "lyrics": {
+    "no_track": "現在再生中のトラックがありません。",
+    "searching_title": "🎶 歌詞を検索中",
+    "searching_description": "**{song}**の歌詞を検索しています...",
+    "searching_footer": "これには数秒かかる場合があります。",
+    "not_found_title": "❌ 見つかりません",
+    "not_found_description": "**{query}**の歌詞が見つかりませんでした",
+    "empty": "歌詞は現在利用できません。",
+    "embed_title": "🎵 {title}",
+    "embed_footer": "ソース: {source} • 現在のトラック: {track}",
+    "stop_button": "歌詞を停止",
+    "stopped": "歌詞が停止されました。"
+  },
+  "logs": {
+    "common": {
+      "unknown": "不明",
+      "member_count": "{count}人のメンバー",
+      "verification": {
+        "none": "なし",
+        "low": "低",
+        "medium": "中",
+        "high": "高",
+        "highest": "最高"
+      },
+      "boost": {
+        "basic": "レベル{tier}",
+        "with_count": "レベル{tier} ({count}ブースト)"
+      }
+    },
+    "guild_join": {
+      "title": "📥 新しいサーバーに参加しました！",
+      "fields": {
+        "name": "サーバー名",
+        "id": "サーバーID",
+        "members": "メンバー",
+        "owner": "所有者",
+        "created_at": "作成日",
+        "verification": "認証レベル",
+        "boost": "ブースト",
+        "total": "総サーバー数"
+      },
+      "summary": "🌐 現在**{total}**個のサーバーにいます！"
+    },
+    "guild_remove": {
+      "title": "📤 サーバーから退出しました",
+      "fields": {
+        "name": "サーバー名",
+        "id": "サーバーID",
+        "members": "メンバー",
+        "owner": "所有者",
+        "created_at": "作成日",
+        "verification": "認証レベル",
+        "boost": "ブースト",
+        "total": "総サーバー数"
+      },
+      "summary": "🌐 現在**{total}**個のサーバーにいます"
+    },
+    "player": {
+      "queue_finished": {
+        "title": "{topgg_emoji} Top.ggで投票お願いします！",
+        "description": "気に入ってくれたら12時間ごとに投票してボットを応援してください。[ここをクリック](https://top.gg/bot/920133124095098881)",
+        "footer": "いつでも /play を使ってね"
+      }
+    }
+  }
+}

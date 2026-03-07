@@ -1,0 +1,428 @@
+{
+  "common": {
+    "voice_required": "Devi prima unirti a un canale vocale.",
+    "not_same_channel": "Devi essere nello stesso canale vocale del bot per usare questo.",
+    "no_player": "Non c'è niente in riproduzione su questo server al momento.",
+    "no_track": "Non c'è nessuna traccia in riproduzione ora.",
+    "generic_error": "Qualcosa è andato storto. Riprova.",
+    "queue_empty": "Non ci sono canzoni aggiuntive in coda.",
+    "buttons_help": "Usa i pulsanti qui sotto per controllare la riproduzione",
+    "now_playing": "In riproduzione",
+    "artist": "Artista",
+    "duration": "Durata",
+    "volume": "Volume",
+    "queue_label": "Coda",
+    "status": "Stato",
+    "requested_by": "Richiesto da",
+    "progress": "Progresso",
+    "queue_size": "Lunghezza coda",
+    "unknown": "Sconosciuto",
+    "no_voice_permissions_title": "Permessi mancanti",
+    "no_voice_permissions": "Non ho il permesso di entrare o parlare in quel canale vocale.",
+    "no_text_permissions_title": "Permessi mancanti",
+    "no_text_permissions": "Non ho il permesso di inviare messaggi o embed in questo canale."
+  },
+  "errors": {
+    "unknown_command": "Comando sconosciuto.",
+    "command_failed": "Qualcosa è andato storto durante l'esecuzione di questo comando.",
+    "button_failed": "Non sono riuscito a eseguire questa azione.",
+    "button_unknown": "Questo pulsante non è configurato.",
+    "lavalink_error_title": "Ops, ho avuto un piccolo problema di connessione interna.",
+    "lavalink_error_description": "I nostri server sono instabili al momento! Per favore non rimuovere il bot dal server, è temporaneo e presto si risolverà!",
+    "node_down_title": "Connessione persa",
+    "node_down_description": "Il server che stava riproducendo è andato offline. Per ridurre i costi e mantenere il bot attivo usiamo server di terze parti che possono avere instabilità temporanee (che purtroppo non controlliamo).\n\nMa siccome sono un bot carino, ho salvato la tua coda :3",
+    "node_down_recover_button": "Recupera Coda"
+  },
+  "queue": {
+    "title": "Coda attuale",
+    "empty": "Non ci sono canzoni aggiuntive in coda.",
+    "field_first_track": "Prima traccia",
+    "field_next": "Prossima",
+    "total": "Totale tracce",
+    "page": "Pagina"
+  },
+  "now_playing": {
+    "no_track": "Nessuna traccia disponibile.",
+    "queue_value": "{count} traccia/e",
+    "footer_hint": "Usa i pulsanti qui sotto per controllare la riproduzione"
+  },
+  "status": {
+    "playing": "🔄 In riproduzione",
+    "paused": "⏸️ In pausa"
+  },
+  "player": {
+    "lonely": {
+      "pause_title": "Accidenti! Mi hanno lasciato solo :(",
+      "pause": "Metterò in pausa la coda per 2 minuti fino al ritorno di qualcuno. Altrimenti, mi disconnetterò!",
+      "resume_title": "Evviva! Non sono più solo :D",
+      "resume": "Qualcuno è entrato in {call}! Ripresa della coda.",
+      "disconnect_title": "Beh, me ne vado, nessuno è tornato davvero...",
+      "disconnect": "Nessuno è tornato in {call}. Mi disconnetto ora."
+    }
+  },
+  "loop": {
+    "off": "Loop: Disattivato",
+    "track": "Loop: Traccia",
+    "queue": "Loop: Coda"
+  },
+  "commands": {
+    "play": {
+      "description": "Riproduci una canzone o playlist usando Kazagumo",
+      "option_query": "Link o termine di ricerca",
+      "already_other_channel": "Sto già riproducendo in un altro canale vocale.",
+      "searching": "Ricerca in corso...",
+      "no_results": "Non sono riuscito a trovare risultati per quella ricerca.",
+      "no_results_title": "Niente trovato",
+      "no_results_description": "Non sono riuscito a trovare risultati per la tua ricerca.\n\nProva di nuovo con parole chiave diverse o verifica se il link è corretto.",
+      "load_failed": "Non sono riuscito a caricare quella traccia.",
+      "load_failed_title": "Impossibile caricare",
+      "load_failed_description": "Non sono riuscito a caricare questa traccia.\n\nIl link potrebbe essere non valido o il contenuto non è disponibile.",
+      "playlist_title": "Playlist aggiunta alla coda",
+      "playlist_description": "**{name}**\n{count} traccia/e aggiunta/e.",
+      "track_title": "Traccia aggiunta alla coda",
+      "track_description": "{title}",
+      "artist": "Artista",
+      "duration": "Durata",
+      "requested_by": "Richiesto da",
+      "footer": "Coda attuale: {count} traccia/e",
+      "playback_start": "Riproduzione di **{label}**...",
+      "search_error": "Qualcosa è andato storto durante la ricerca di questa traccia."
+    },
+    "resumequeue": {
+      "description": "Riprendi l'ultima coda salvata dopo una disconnessione",
+      "no_cache_title": "Nessuna coda salvata",
+      "no_cache_description": "Non c'è nessuna coda salvata da riprendere.\n\nLa cache della coda scade dopo 1 ora o quando la coda termina naturalmente.",
+      "failed_title": "Ripresa fallita",
+      "failed_description": "Non sono riuscito a caricare nessuna traccia dalla coda salvata.",
+      "success_title": "Coda ripristinata!",
+      "success_description": "**{count}** traccia/e sono state aggiunte alla coda.",
+      "first_track": "Prima traccia",
+      "queue_size": "Dimensione coda",
+      "loading": "Ripristino della coda..."
+    },
+    "pause": {
+      "description": "Metti in pausa la canzone attuale",
+      "already_paused": "La musica è già in pausa.",
+      "success": "⏸️ Traccia in pausa."
+    },
+    "resume": {
+      "description": "Riprendi la musica",
+      "already_playing": "La musica è già in riproduzione.",
+      "success": "▶️ Traccia ripresa."
+    },
+    "filter": {
+      "description": "Apri il pannello di controllo dei filtri audio",
+      "no_track": "Non c'è nessuna traccia in riproduzione ora.",
+      "filters": {
+        "embed": {
+          "title": "🎛️ Pannello Filtri Audio",
+          "description": "Seleziona quali filtri vuoi applicare alla musica:",
+          "now_playing_label": "🎵 In riproduzione",
+          "now_playing_value": "**{title}**\nDi: {author}",
+          "available_label": "🎛️ Filtri disponibili",
+          "available_value": "🎵 **Potenziamento Bassi** - Amplifica le basse frequenze\n⚡ **Nightcore** - Velocizza velocità e tono\n🎤 **Karaoke** - Riduzione vocale\n🌀 **Audio 8D** - Effetto rotazionale\n🔄 **Ripristina** - Rimuovi tutti i filtri",
+          "howto_label": "💡 Come usare",
+          "howto_value": "Clicca i pulsanti per attivare/disattivare i filtri. I filtri attivi diventano blu.",
+          "footer": "⚠️ I filtri possono richiedere un momento per essere applicati"
+        }
+      },
+      "buttons": {
+        "bass_boost": {
+          "label": "Potenziamento Bassi",
+          "select_level": "🎵 Seleziona il livello di Potenziamento Bassi:",
+          "activated_low": "🔉 Potenziamento Bassi attivato (basso).",
+          "activated_medium": "🔊 Potenziamento Bassi attivato (medio).",
+          "activated_high": "📢 Potenziamento Bassi attivato (alto).",
+          "deactivated": "🎵 Potenziamento Bassi disattivato.",
+          "error": "❌ Errore nell'applicazione del Potenziamento Bassi.",
+          "level_low": "Basso",
+          "level_medium": "Medio",
+          "level_high": "Alto"
+        },
+        "nightcore": {
+          "label": "Nightcore",
+          "activated": "⚡ Nightcore attivato!",
+          "deactivated": "⚡ Nightcore disattivato.",
+          "error": "❌ Errore nell'applicazione di Nightcore."
+        },
+        "karaoke": {
+          "label": "Karaoke",
+          "activated": "🎤 Karaoke attivato!",
+          "deactivated": "🎤 Karaoke disattivato.",
+          "error": "❌ Errore nell'applicazione del Karaoke."
+        },
+        "rotation": {
+          "label": "Audio 8D",
+          "activated": "🌀 Audio 8D attivato!",
+          "deactivated": "🌀 Audio 8D disattivato.",
+          "error": "❌ Errore nell'applicazione dell'Audio 8D."
+        },
+        "reset": {
+          "label": "Ripristina",
+          "success": "🔄 Tutti i filtri sono stati rimossi!",
+          "error": "❌ Errore nel ripristino dei filtri."
+        }
+      }
+    },
+    "ping": {
+      "description": "Misura la latenza per Discord, Lavalink e Cloudflare",
+      "embed": {
+        "title": "🏓 Ping",
+        "footer": "Misurazioni effettuate proprio ora"
+      },
+      "fields": {
+        "discord": {
+          "name": "Discord (Gateway)",
+          "value": "{emoji} `{latency} ms`"
+        },
+        "lavalink": {
+          "display_name": "Nodo Lavalink: {name}",
+          "value": "{emoji} `{latency} ms` • endpoint: `{endpoint}`"
+        },
+        "lavalink_empty": {
+          "name": "Lavalink",
+          "value": "{emoji} nessuna configurazione trovata"
+        },
+        "cloudflare": {
+          "name": "1.1.1.1",
+          "value": "{emoji} `{latency} ms` • TCP 443"
+        }
+      }
+    },
+    "skip": {
+      "description": "Salta alla traccia successiva nella coda",
+      "no_track": "Non c'è una traccia attuale da saltare.",
+      "success": "⏭️ Traccia saltata."
+    },
+    "skipto": {
+      "description": "Vai a una posizione specifica della coda",
+      "option_position": "Posizione nella coda (1 = prossima traccia)",
+      "invalid_position": "Indica una posizione maggiore o uguale a 1.",
+      "too_short": "La coda non ha così tante tracce.",
+      "success": "⏭️ Saltato alla traccia #{position}."
+    },
+    "stop": {
+      "description": "Ferma la riproduzione e svuota la coda",
+      "success": "⏹️ Lettore fermato e coda svuotata."
+    },
+    "shuffle": {
+      "description": "Mescola la coda attuale",
+      "empty": "La coda è vuota o ha solo una traccia.",
+      "success": "Coda mescolata con successo!"
+    },
+    "seek": {
+      "description": "Salta a una posizione specifica nella traccia attuale",
+      "option_label": "Esempio: 90s, 1m20s, 01:20, 2h5m",
+      "invalid": "Tempo non valido. Prova qualcosa come `90s`, `1m20s` o `01:30`.",
+      "success": "⏩ Spostato a **{time}**.",
+      "error": "Non sono riuscito a cambiare la posizione di questa traccia."
+    },
+    "language": {
+      "description": "Seleziona la lingua del bot per questo server",
+      "option_label": "Lingua",
+      "success": "Lingua aggiornata a **{language}**.",
+      "current": "La lingua attuale è **{language}**.",
+      "not_available": "Le impostazioni della lingua non sono disponibili al momento."
+    },
+    "admin": {
+      "errors": {
+        "not_owner": "Solo i proprietari del bot possono usare questo comando.",
+        "storage_unavailable": "L'archiviazione della presenza non è disponibile al momento.",
+        "unexpected": "Qualcosa è andato storto durante l'aggiornamento dello stato."
+      },
+      "status": {
+        "labels": {
+          "online": "Online",
+          "idle": "Assente",
+          "dnd": "Non disturbare",
+          "invisible": "Invisibile"
+        }
+      },
+      "setstatus": {
+        "description": "Cambia lo stato del bot (Online, DND, Assente, Invisibile)",
+        "option_state": "Scegli il nuovo stato",
+        "success_title": "✅ Stato aggiornato",
+        "success_description": "Nuovo stato: **{status}**."
+      },
+      "activity_types": {
+        "playing": "Giocando",
+        "listening": "Ascoltando",
+        "watching": "Guardando",
+        "competing": "Competendo",
+        "streaming": "In diretta"
+      },
+      "setpresence": {
+        "errors": {
+          "message_required": "❌ Fornisci il 'message' per l'attività.",
+          "streaming_message_required": "❌ Fornisci il 'message' per lo streaming.",
+          "streaming_url": "❌ Per 'Streaming', fornisci un URL valido (Twitch/YouTube)."
+        },
+        "success": {
+          "title": "✅ Presenza aggiornata",
+          "cleared": "Attività cancellata.",
+          "updated": "Attività impostata: **{activity_label}** — {message}",
+          "url_label": "URL"
+        }
+      },
+      "logs": {
+        "errors": {
+          "storage_unavailable": "Le impostazioni del registro non sono disponibili al momento.",
+          "status_failed": "Non sono riuscito a leggere le impostazioni del registro. Riprova più tardi.",
+          "toggle_failed": "Non sono riuscito ad aggiornare le impostazioni del registro."
+        },
+        "status_title": "📊 Stato registri musicali",
+        "status_description": "I registri di inizio musica sono attualmente **{status}**.",
+        "status_enabled": "attivati",
+        "status_disabled": "disattivati",
+        "status_channel_label": "Canale registro",
+        "status_channel_unset": "Non configurato (imposta LOG_CHANNEL_ID).",
+        "enable_title": "✅ Registri musicali attivati",
+        "enable_description": "Invierò un registro ogni volta che un utente avvia una nuova traccia.",
+        "disable_title": "🔕 Registri musicali disattivati",
+        "disable_description": "Non invierò più registri di inizio musica."
+      },
+      "restart": {
+        "status": {
+          "title": "ℹ️ Stato riavvio",
+          "description": "Il riavvio è attualmente **{status}**.",
+          "scheduled": "programmato",
+          "not_scheduled": "non programmato",
+          "active_connections_label": "Connessioni vocali attive"
+        },
+        "schedule": {
+          "success_title": "✅ Riavvio programmato",
+          "success_description": "Mi riavvierò automaticamente non appena non sarò connesso a nessun canale vocale.",
+          "already_title": "⚠️ Riavvio già programmato",
+          "already_description": "Sto già aspettando di riavviare quando non ci saranno connessioni vocali attive."
+        },
+        "cancel": {
+          "none_title": "ℹ️ Nessun riavvio programmato",
+          "none_description": "Non c'è nessun riavvio programmato da annullare.",
+          "success_title": "🚫 Riavvio annullato",
+          "success_description": "Riavvio programmato annullato con successo."
+        }
+      }
+    },
+    "help": {
+      "main": {
+        "title": "📚 Centro Comandi",
+        "description": "Benvenuto nel menu di aiuto! Seleziona una categoria qui sotto per esplorare tutti i comandi disponibili.\n\n**Info Rapida:**\n🎵 Riproduci musica da YouTube, Spotify, Deezer e altro\n⚙️ Personalizza la tua esperienza con le impostazioni\n🛠️ Utilità per la gestione del server",
+        "footer": "Fatto con ❤️ | Seleziona una categoria per iniziare"
+      },
+      "categories": {
+        "music": "Comandi Musicali",
+        "music_description": "Riproduci, controlla e gestisci la tua musica",
+        "music_short": "{count} comandi disponibili",
+        "config": "Configurazione",
+        "config_description": "Personalizza le impostazioni del bot",
+        "config_short": "Lingua e preferenze",
+        "utilities": "Utilità",
+        "utilities_description": "Strumenti utili e informazioni",
+        "utilities_short": "Ping e diagnostica",
+        "admin": "Comandi Admin",
+        "admin_description": "Amministrazione del bot (solo proprietario)",
+        "admin_short": "Controlli avanzati",
+        "home": "Home",
+        "home_short": "Torna al menu principale"
+      },
+      "dropdown": {
+        "placeholder": "📂 Seleziona una categoria..."
+      },
+      "music": {
+        "description": "Controllo completo sulla tua musica con {count} comandi. Supporta YouTube, Spotify, Deezer, Apple Music, SoundCloud e altro!",
+        "play": "Riproduci una canzone o aggiungi alla coda (URL o ricerca)",
+        "pause": "Metti in pausa la traccia corrente",
+        "resume": "Riprendi la riproduzione",
+        "skip": "Salta alla canzone successiva",
+        "stop": "Ferma la riproduzione e svuota la coda",
+        "queue": "Visualizza la coda corrente",
+        "shuffle": "Mescola la coda",
+        "skipto": "Salta a una posizione specifica nella coda",
+        "seek": "Salta a un momento specifico nella traccia",
+        "lyrics": "Mostra i testi sincronizzati della canzone corrente",
+        "filters": "Applica filtri audio (bass boost, nightcore, karaoke, rotazione)"
+      },
+      "config": {
+        "description": "Personalizza la tua esperienza con il bot tramite le impostazioni.",
+        "language": "Cambia la lingua del bot ({count} lingue supportate)"
+      },
+      "utilities": {
+        "description": "Strumenti utili per monitorare le prestazioni e la connettività del bot.",
+        "ping": "Controlla la latenza di Discord, Lavalink e Cloudflare"
+      },
+      "admin": {
+        "description": "⚠️ **Solo Proprietario del Bot** - Comandi amministrativi avanzati per la gestione.",
+        "admin": "Accedi al pannello admin (presenza, log, restart)"
+      },
+      "footer": "Usa il menu a tendina per cambiare categoria"
+    }
+  },
+  "seek": {
+    "no_track": "Nessuna traccia è attualmente in riproduzione."
+  },
+  "lyrics": {
+    "no_track": "Nessuna traccia è attualmente in riproduzione.",
+    "searching_title": "🎶 Ricerca testo",
+    "searching_description": "Ricerca del testo di **{song}**...",
+    "searching_footer": "Questo potrebbe richiedere alcuni secondi.",
+    "not_found_title": "❌ Non trovato",
+    "not_found_description": "Non sono riuscito a trovare il testo per: **{query}**",
+    "empty": "Testo non disponibile al momento.",
+    "embed_title": "🎵 {title}",
+    "embed_footer": "Fonte: {source} • Traccia attuale: {track}",
+    "stop_button": "Ferma testo",
+    "stopped": "Testo fermato."
+  },
+  "logs": {
+    "common": {
+      "unknown": "Sconosciuto",
+      "member_count": "{count} membri",
+      "verification": {
+        "none": "Nessuna",
+        "low": "Bassa",
+        "medium": "Media",
+        "high": "Alta",
+        "highest": "Massima"
+      },
+      "boost": {
+        "basic": "Livello {tier}",
+        "with_count": "Livello {tier} ({count} boost)"
+      }
+    },
+    "guild_join": {
+      "title": "📥 Sono entrato in un nuovo server!",
+      "fields": {
+        "name": "Nome del Server",
+        "id": "ID del Server",
+        "members": "Membri",
+        "owner": "Proprietario",
+        "created_at": "Creato il",
+        "verification": "Verifica",
+        "boost": "Boost",
+        "total": "Totale Server"
+      },
+      "summary": "🌐 Ora sono in **{total}** server!"
+    },
+    "guild_remove": {
+      "title": "📤 Sono uscito da un server",
+      "fields": {
+        "name": "Nome del Server",
+        "id": "ID del Server",
+        "members": "Membri",
+        "owner": "Proprietario",
+        "created_at": "Creato il",
+        "verification": "Verifica",
+        "boost": "Boost",
+        "total": "Totale Server"
+      },
+      "summary": "🌐 Ora sono in **{total}** server"
+    },
+    "player": {
+      "queue_finished": {
+        "title": "{topgg_emoji} Per favore, votami su Top.gg!",
+        "description": "Ti piace? Lascia un voto ogni 12 ore e aiuta il bot a restare attivo [cliccando qui](https://top.gg/bot/920133124095098881)",
+        "footer": "Usa /play di nuovo quando vuoi"
+      }
+    }
+  }
+}

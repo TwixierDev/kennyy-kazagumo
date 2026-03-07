@@ -1,0 +1,428 @@
+{
+  "common": {
+    "voice_required": "Önce bir ses kanalına katılmanız gerekiyor.",
+    "not_same_channel": "Bunu kullanmak için botla aynı ses kanalında olmanız gerekir.",
+    "no_player": "Bu sunucuda şu anda hiçbir şey çalmıyor.",
+    "no_track": "Şu anda çalan bir parça yok.",
+    "generic_error": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+    "queue_empty": "Kuyrukta ek şarkı yok.",
+    "buttons_help": "Oynatmayı kontrol etmek için aşağıdaki düğmeleri kullanın",
+    "now_playing": "Şimdi Çalıyor",
+    "artist": "Sanatçı",
+    "duration": "Süre",
+    "volume": "Ses",
+    "queue_label": "Kuyruk",
+    "status": "Durum",
+    "requested_by": "İsteyen",
+    "progress": "İlerleme",
+    "queue_size": "Kuyruk uzunluğu",
+    "unknown": "Bilinmiyor",
+    "no_voice_permissions_title": "Eksik izinler",
+    "no_voice_permissions": "O ses kanalına katılma veya konuşma iznim yok.",
+    "no_text_permissions_title": "Eksik izinler",
+    "no_text_permissions": "Bu kanalda mesaj veya embed gönderme iznim yok."
+  },
+  "errors": {
+    "unknown_command": "Bilinmeyen komut.",
+    "command_failed": "Bu komut çalıştırılırken bir şeyler ters gitti.",
+    "button_failed": "Bu eylemi çalıştıramadım.",
+    "button_unknown": "Bu düğme yapılandırılmamış.",
+    "lavalink_error_title": "Hay aksi, iç bağlantıda küçük bir sorun yaşadım.",
+    "lavalink_error_description": "Sunucularımız şu anda dengesiz! Lütfen botu sunucudan kaldırmayın, bu geçici ve yakında düzelecek!",
+    "node_down_title": "Bağlantı kesildi",
+    "node_down_description": "Müziği çalan sunucu çevrimdışına düştü. Maliyetleri azaltmak ve botu hayatta tutmak için üçüncü taraf sunucular kullanıyoruz; bunlar bazen kısa süreli dengesizlik yaşayabiliyor (maalesef kontrol edemiyoruz).\n\nAma iyi bir bot olduğum için kuyruğunu kaydettim :3",
+    "node_down_recover_button": "Kuyruğu Kurtar"
+  },
+  "queue": {
+    "title": "Mevcut kuyruk",
+    "empty": "Kuyrukta ek şarkı yok.",
+    "field_first_track": "İlk parça",
+    "field_next": "Sonraki",
+    "total": "Toplam parça",
+    "page": "Sayfa"
+  },
+  "now_playing": {
+    "no_track": "Kullanılabilir parça yok.",
+    "queue_value": "{count} parça",
+    "footer_hint": "Oynatmayı kontrol etmek için aşağıdaki düğmeleri kullanın"
+  },
+  "status": {
+    "playing": "🔄 Çalıyor",
+    "paused": "⏸️ Duraklatıldı"
+  },
+  "player": {
+    "lonely": {
+      "pause_title": "Eyvah! Beni yalnız bıraktılar :(",
+      "pause": "Birisi geri dönene kadar 2 dakika boyunca kuyruğu duraklatacağım. Aksi takdirde bağlantıyı keseceğim!",
+      "resume_title": "Yaşasın! Artık yalnız değilim :D",
+      "resume": "Birisi {call} kanalına katıldı! Kuyruk devam ediyor.",
+      "disconnect_title": "Peki, gidiyorum, kimse dönmedi zaten...",
+      "disconnect": "{call} kanalına kimse geri dönmedi. Şimdi bağlantıyı kesiyorum."
+    }
+  },
+  "loop": {
+    "off": "Döngü: Kapalı",
+    "track": "Döngü: Parça",
+    "queue": "Döngü: Kuyruk"
+  },
+  "commands": {
+    "play": {
+      "description": "Kazagumo kullanarak bir şarkı veya çalma listesi çal",
+      "option_query": "Bağlantı veya arama terimi",
+      "already_other_channel": "Zaten başka bir ses kanalında çalıyorum.",
+      "searching": "Aranıyor...",
+      "no_results": "Bu arama için sonuç bulamadım.",
+      "no_results_title": "Hiçbir şey bulunamadı",
+      "no_results_description": "Aramanız için sonuç bulamadım.\n\nFarklı anahtar kelimelerle tekrar deneyin veya bağlantının doğru olup olmadığını kontrol edin.",
+      "load_failed": "Bu parçayı yükleyemedim.",
+      "load_failed_title": "Yükleme başarısız",
+      "load_failed_description": "Bu parçayı yükleyemedim.\n\nBağlantı geçersiz olabilir veya içerik kullanılamıyor.",
+      "playlist_title": "Çalma listesi kuyruğa eklendi",
+      "playlist_description": "**{name}**\n{count} parça eklendi.",
+      "track_title": "Parça kuyruğa eklendi",
+      "track_description": "{title}",
+      "artist": "Sanatçı",
+      "duration": "Süre",
+      "requested_by": "İsteyen",
+      "footer": "Mevcut kuyruk: {count} parça",
+      "playback_start": "**{label}** çalınıyor...",
+      "search_error": "Bu parça aranırken bir şeyler ters gitti."
+    },
+    "resumequeue": {
+      "description": "Bağlantı kesildikten sonra son kaydedilen kuyruğu devam ettir",
+      "no_cache_title": "Kaydedilmiş kuyruk yok",
+      "no_cache_description": "Devam ettirilecek kaydedilmiş kuyruk yok.\n\nKuyruk önbelleği 1 saat sonra veya kuyruk doğal olarak bittiğinde sona erer.",
+      "failed_title": "Devam ettirme başarısız",
+      "failed_description": "Kaydedilen kuyruktan parça yüklenemedi.",
+      "success_title": "Kuyruk geri yüklendi!",
+      "success_description": "**{count}** parça kuyruğa eklendi.",
+      "first_track": "İlk parça",
+      "queue_size": "Kuyruk boyutu",
+      "loading": "Kuyruk geri yükleniyor..."
+    },
+    "pause": {
+      "description": "Mevcut şarkıyı duraklat",
+      "already_paused": "Müzik zaten duraklatılmış.",
+      "success": "⏸️ Parça duraklatıldı."
+    },
+    "resume": {
+      "description": "Müziği devam ettir",
+      "already_playing": "Müzik zaten çalıyor.",
+      "success": "▶️ Parça devam ettirildi."
+    },
+    "filter": {
+      "description": "Ses filtresi kontrol panelini aç",
+      "no_track": "Şu anda çalan bir parça yok.",
+      "filters": {
+        "embed": {
+          "title": "🎛️ Ses Filtresi Paneli",
+          "description": "Müziğe uygulamak istediğiniz filtreleri seçin:",
+          "now_playing_label": "🎵 Şimdi Çalıyor",
+          "now_playing_value": "**{title}**\nSanatçı: {author}",
+          "available_label": "🎛️ Mevcut Filtreler",
+          "available_value": "🎵 **Bas Güçlendirme** - Düşük frekansları güçlendirir\n⚡ **Nightcore** - Hızı ve tonu artırır\n🎤 **Karaoke** - Vokal azaltma\n🌀 **8D Ses** - Dönme efekti\n🔄 **Sıfırla** - Tüm filtreleri kaldır",
+          "howto_label": "💡 Nasıl kullanılır",
+          "howto_value": "Filtreleri açıp kapatmak için düğmelere tıklayın. Aktif filtreler mavi olur.",
+          "footer": "⚠️ Filtrelerin uygulanması biraz zaman alabilir"
+        }
+      },
+      "buttons": {
+        "bass_boost": {
+          "label": "Bas Güçlendirme",
+          "select_level": "🎵 Bas Güçlendirme seviyesini seçin:",
+          "activated_low": "🔉 Bas Güçlendirme etkinleştirildi (düşük).",
+          "activated_medium": "🔊 Bas Güçlendirme etkinleştirildi (orta).",
+          "activated_high": "📢 Bas Güçlendirme etkinleştirildi (yüksek).",
+          "deactivated": "🎵 Bas Güçlendirme devre dışı bırakıldı.",
+          "error": "❌ Bas Güçlendirme uygulanırken hata oluştu.",
+          "level_low": "Düşük",
+          "level_medium": "Orta",
+          "level_high": "Yüksek"
+        },
+        "nightcore": {
+          "label": "Nightcore",
+          "activated": "⚡ Nightcore etkinleştirildi!",
+          "deactivated": "⚡ Nightcore devre dışı bırakıldı.",
+          "error": "❌ Nightcore uygulanırken hata oluştu."
+        },
+        "karaoke": {
+          "label": "Karaoke",
+          "activated": "🎤 Karaoke etkinleştirildi!",
+          "deactivated": "🎤 Karaoke devre dışı bırakıldı.",
+          "error": "❌ Karaoke uygulanırken hata oluştu."
+        },
+        "rotation": {
+          "label": "8D Ses",
+          "activated": "🌀 8D Ses etkinleştirildi!",
+          "deactivated": "🌀 8D Ses devre dışı bırakıldı.",
+          "error": "❌ 8D Ses uygulanırken hata oluştu."
+        },
+        "reset": {
+          "label": "Sıfırla",
+          "success": "🔄 Tüm filtreler kaldırıldı!",
+          "error": "❌ Filtreler sıfırlanırken hata oluştu."
+        }
+      }
+    },
+    "ping": {
+      "description": "Discord, Lavalink ve Cloudflare için gecikmeyi ölç",
+      "embed": {
+        "title": "🏓 Ping",
+        "footer": "Ölçümler şu an alındı"
+      },
+      "fields": {
+        "discord": {
+          "name": "Discord (Gateway)",
+          "value": "{emoji} `{latency} ms`"
+        },
+        "lavalink": {
+          "display_name": "Lavalink düğümü: {name}",
+          "value": "{emoji} `{latency} ms` • endpoint: `{endpoint}`"
+        },
+        "lavalink_empty": {
+          "name": "Lavalink",
+          "value": "{emoji} yapılandırma bulunamadı"
+        },
+        "cloudflare": {
+          "name": "1.1.1.1",
+          "value": "{emoji} `{latency} ms` • TCP 443"
+        }
+      }
+    },
+    "skip": {
+      "description": "Kuyruktaki bir sonraki parçaya geç",
+      "no_track": "Atlanacak mevcut parça yok.",
+      "success": "⏭️ Parça atlandı."
+    },
+    "skipto": {
+      "description": "Kuyruktaki belirli bir konuma git",
+      "option_position": "Kuyruktaki pozisyon (1 = sonraki parça)",
+      "invalid_position": "1 veya daha büyük bir pozisyon girin.",
+      "too_short": "Kuyrukta bu kadar parça yok.",
+      "success": "⏭️ #{position}. parçaya geçildi."
+    },
+    "stop": {
+      "description": "Oynatmayı durdur ve kuyruğu temizle",
+      "success": "⏹️ Oynatıcı durduruldu ve kuyruk temizlendi."
+    },
+    "shuffle": {
+      "description": "Mevcut kuyruğu karıştır",
+      "empty": "Kuyruk boş veya sadece bir şarkı var.",
+      "success": "Kuyruk başarıyla karıştırıldı!"
+    },
+    "seek": {
+      "description": "Mevcut parçada belirli bir konuma atla",
+      "option_label": "Örnek: 90s, 1m20s, 01:20, 2h5m",
+      "invalid": "Geçersiz zaman. `90s`, `1m20s` veya `01:30` gibi bir şey deneyin.",
+      "success": "⏩ **{time}** konumuna taşındı.",
+      "error": "Bu parçanın konumunu değiştiremedim."
+    },
+    "language": {
+      "description": "Bu sunucu için bot dilini seç",
+      "option_label": "Dil",
+      "success": "Dil **{language}** olarak güncellendi.",
+      "current": "Mevcut dil **{language}**.",
+      "not_available": "Dil ayarları şu anda mevcut değil."
+    },
+    "admin": {
+      "errors": {
+        "not_owner": "Bu komutu yalnızca bot sahipleri kullanabilir.",
+        "storage_unavailable": "Durum depolama şu anda mevcut değil.",
+        "unexpected": "Durum güncellenirken bir şeyler ters gitti."
+      },
+      "status": {
+        "labels": {
+          "online": "Çevrimiçi",
+          "idle": "Boşta",
+          "dnd": "Rahatsız Etmeyin",
+          "invisible": "Görünmez"
+        }
+      },
+      "setstatus": {
+        "description": "Bot durumunu değiştir (Çevrimiçi, Rahatsız Etmeyin, Boşta, Görünmez)",
+        "option_state": "Yeni durumu seçin",
+        "success_title": "✅ Durum güncellendi",
+        "success_description": "Yeni durum: **{status}**."
+      },
+      "activity_types": {
+        "playing": "Oynuyor",
+        "listening": "Dinliyor",
+        "watching": "İzliyor",
+        "competing": "Yarışıyor",
+        "streaming": "Canlı yayında"
+      },
+      "setpresence": {
+        "errors": {
+          "message_required": "❌ Aktivite için bir mesaj sağlayın.",
+          "streaming_message_required": "❌ Yayın için bir mesaj sağlayın.",
+          "streaming_url": "❌ Yayın için geçerli bir URL sağlayın (Twitch/YouTube)."
+        },
+        "success": {
+          "title": "✅ Varlık güncellendi",
+          "cleared": "Aktivite temizlendi.",
+          "updated": "Aktivite ayarlandı: **{activity_label}** — {message}",
+          "url_label": "URL"
+        }
+      },
+      "logs": {
+        "errors": {
+          "storage_unavailable": "Günlük ayarları şu anda mevcut değil.",
+          "status_failed": "Günlük ayarlarını okuyamadım. Daha sonra tekrar deneyin.",
+          "toggle_failed": "Günlük ayarlarını güncelleyemedim."
+        },
+        "status_title": "📊 Müzik günlüğü durumu",
+        "status_description": "Müzik başlangıç günlükleri şu anda **{status}**.",
+        "status_enabled": "etkin",
+        "status_disabled": "devre dışı",
+        "status_channel_label": "Günlük kanalı",
+        "status_channel_unset": "Yapılandırılmamış (LOG_CHANNEL_ID ayarlayın).",
+        "enable_title": "✅ Müzik günlükleri etkinleştirildi",
+        "enable_description": "Bir kullanıcı yeni bir parça başlattığında her seferinde günlük göndereceğim.",
+        "disable_title": "🔕 Müzik günlükleri devre dışı bırakıldı",
+        "disable_description": "Artık müzik başlangıç günlükleri göndermeyeceğim."
+      },
+      "restart": {
+        "status": {
+          "title": "ℹ️ Yeniden başlatma durumu",
+          "description": "Yeniden başlatma şu anda **{status}**.",
+          "scheduled": "zamanlandı",
+          "not_scheduled": "zamanlanmadı",
+          "active_connections_label": "Aktif ses bağlantıları"
+        },
+        "schedule": {
+          "success_title": "✅ Yeniden başlatma zamanlandı",
+          "success_description": "Herhangi bir ses kanalına bağlı olmadığım anda otomatik olarak yeniden başlayacağım.",
+          "already_title": "⚠️ Yeniden başlatma zaten zamanlanmış",
+          "already_description": "Aktif ses bağlantısı olmadığında yeniden başlatmak için zaten bekliyorum."
+        },
+        "cancel": {
+          "none_title": "ℹ️ Zamanlanmış yeniden başlatma yok",
+          "none_description": "İptal edilecek zamanlanmış yeniden başlatma yok.",
+          "success_title": "🚫 Yeniden başlatma iptal edildi",
+          "success_description": "Zamanlanmış yeniden başlatma başarıyla iptal edildi."
+        }
+      }
+    },
+    "help": {
+      "main": {
+        "title": "📚 Komut Merkezi",
+        "description": "Yardım menüsüne hoş geldiniz! Tüm kullanılabilir komutları keşfetmek için aşağıdan bir kategori seçin.\n\n**Hızlı Bilgi:**\n🎵 YouTube, Spotify, Deezer ve daha fazlasından müzik çalın\n⚙️ Ayarlarla deneyiminizi özelleştirin\n🛠️ Sunucu yönetimi için faydalı araçlar",
+        "footer": "❤️ ile yapıldı | Başlamak için bir kategori seçin"
+      },
+      "categories": {
+        "music": "Müzik Komutları",
+        "music_description": "Müziğinizi çalın, kontrol edin ve yönetin",
+        "music_short": "{count} komut kullanılabilir",
+        "config": "Yapılandırma",
+        "config_description": "Bot ayarlarını özelleştirin",
+        "config_short": "Dil ve tercihler",
+        "utilities": "Araçlar",
+        "utilities_description": "Faydalı araçlar ve bilgiler",
+        "utilities_short": "Ping ve teşhis",
+        "admin": "Yönetici Komutları",
+        "admin_description": "Bot yönetimi (sadece sahip)",
+        "admin_short": "Gelişmiş kontroller",
+        "home": "Ana Sayfa",
+        "home_short": "Ana menüye dön"
+      },
+      "dropdown": {
+        "placeholder": "📂 Bir kategori seçin..."
+      },
+      "music": {
+        "description": "{count} komutla müzik çalma üzerinde tam kontrol. YouTube, Spotify, Deezer, Apple Music, SoundCloud ve daha fazlasını destekler!",
+        "play": "Bir şarkı çalın veya kuyruğa ekleyin (URL veya arama)",
+        "pause": "Mevcut parçayı duraklatın",
+        "resume": "Çalmaya devam edin",
+        "skip": "Sonraki şarkıya geç",
+        "stop": "Çalmayı durdur ve kuyruğu temizle",
+        "queue": "Mevcut kuyruğu görüntüle",
+        "shuffle": "Kuyruğu karıştır",
+        "skipto": "Kuyrukta belirli bir konuma atla",
+        "seek": "Parçada belirli bir zamana atla",
+        "lyrics": "Mevcut şarkının senkronize sözlerini göster",
+        "filters": "Ses filtreleri uygula (bass boost, nightcore, karaoke, döndürme)"
+      },
+      "config": {
+        "description": "Ayarlarla bot deneyiminizi kişiselleştirin.",
+        "language": "Botun dilini değiştir ({count} dil desteklenir)"
+      },
+      "utilities": {
+        "description": "Bot performansını ve bağlantısını izlemek için faydalı araçlar.",
+        "ping": "Discord, Lavalink ve Cloudflare gecikmesini kontrol et"
+      },
+      "admin": {
+        "description": "⚠️ **Sadece Bot Sahibi** - Yönetim için gelişmiş yönetici komutları.",
+        "admin": "Yönetici paneline erişin (durum, günlükler, yeniden başlatma)"
+      },
+      "footer": "Kategori değiştirmek için açılır menüyü kullanın"
+    }
+  },
+  "seek": {
+    "no_track": "Şu anda çalan bir parça yok."
+  },
+  "lyrics": {
+    "no_track": "Şu anda çalan bir parça yok.",
+    "searching_title": "🎶 Şarkı sözü aranıyor",
+    "searching_description": "**{song}** için şarkı sözü aranıyor...",
+    "searching_footer": "Bu birkaç saniye sürebilir.",
+    "not_found_title": "❌ Bulunamadı",
+    "not_found_description": "**{query}** için şarkı sözü bulamadım",
+    "empty": "Şarkı sözü şu anda mevcut değil.",
+    "embed_title": "🎵 {title}",
+    "embed_footer": "Kaynak: {source} • Mevcut parça: {track}",
+    "stop_button": "Şarkı sözünü durdur",
+    "stopped": "Şarkı sözü durduruldu."
+  },
+  "logs": {
+    "common": {
+      "unknown": "Bilinmiyor",
+      "member_count": "{count} üye",
+      "verification": {
+        "none": "Yok",
+        "low": "Düşük",
+        "medium": "Orta",
+        "high": "Yüksek",
+        "highest": "En Yüksek"
+      },
+      "boost": {
+        "basic": "Seviye {tier}",
+        "with_count": "Seviye {tier} ({count} boost)"
+      }
+    },
+    "guild_join": {
+      "title": "📥 Yeni bir sunucuya katıldım!",
+      "fields": {
+        "name": "Sunucu Adı",
+        "id": "Sunucu ID",
+        "members": "Üyeler",
+        "owner": "Sahip",
+        "created_at": "Oluşturulma Tarihi",
+        "verification": "Doğrulama",
+        "boost": "Boost",
+        "total": "Toplam Sunucu"
+      },
+      "summary": "🌐 Artık **{total}** sunucudayım!"
+    },
+    "guild_remove": {
+      "title": "📤 Bir sunucudan ayrıldım",
+      "fields": {
+        "name": "Sunucu Adı",
+        "id": "Sunucu ID",
+        "members": "Üyeler",
+        "owner": "Sahip",
+        "created_at": "Oluşturulma Tarihi",
+        "verification": "Doğrulama",
+        "boost": "Boost",
+        "total": "Toplam Sunucu"
+      },
+      "summary": "🌐 Artık **{total}** sunucudayım"
+    },
+    "player": {
+      "queue_finished": {
+        "title": "{topgg_emoji} Lütfen Top.gg'de oy verin!",
+        "description": "Beğendiyseniz, her 12 saatte bir oy verin ve botun aktif kalmasına yardımcı olun [buraya tıklayarak](https://top.gg/bot/920133124095098881)",
+        "footer": "İstediğiniz zaman /play komutunu kullanın"
+      }
+    }
+  }
+}
